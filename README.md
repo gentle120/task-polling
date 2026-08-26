@@ -1,9 +1,9 @@
 ## task_polling
 
-#### introduction
+### introduction
 [task polling](https://github.com/gentle120/task_polling) is a runtime processor to handle multiple task based on software timer.
 
-#### get started 
+### get started 
 **intialize a task**
 ```cpp
 void task_init(struct task_list *item, const char *_name, uint32_t _deadline, task_ob _ob, task_timer _timer)
@@ -20,7 +20,7 @@ void task_start(void)
 static task_timer timer = NULL
 ```
 
-#### example
+### example
 ```cpp
 cd build
 
