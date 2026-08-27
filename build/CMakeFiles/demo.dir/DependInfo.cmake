@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Desktop/work/IDE/vscode/rt_task/task.cpp" "CMakeFiles/demo.dir/task.cpp.obj" "gcc" "CMakeFiles/demo.dir/task.cpp.obj.d"
+  "D:/Desktop/work/IDE/vscode/rt_task/example.c" "CMakeFiles/demo.dir/example.c.obj" "gcc" "CMakeFiles/demo.dir/example.c.obj.d"
+  "D:/Desktop/work/IDE/vscode/rt_task/task.c" "CMakeFiles/demo.dir/task.c.obj" "gcc" "CMakeFiles/demo.dir/task.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

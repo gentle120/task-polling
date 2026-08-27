@@ -1,8 +1,14 @@
 [
 {
   "directory": "D:/Desktop/work/IDE/vscode/rt_task/build",
-  "command": "d:\\Desktop\\tools\\toolchain\\mingw64\\bin\\g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -o CMakeFiles\\demo.dir\\task.cpp.obj -c D:\\Desktop\\work\\IDE\\vscode\\rt_task\\task.cpp",
-  "file": "D:/Desktop/work/IDE/vscode/rt_task/task.cpp",
-  "output": "CMakeFiles/demo.dir/task.cpp.obj"
+  "command": "d:\\Desktop\\tools\\toolchain\\mingw64\\bin\\gcc.exe  @CMakeFiles/demo.dir/includes_C.rsp -g -o CMakeFiles\\demo.dir\\task.c.obj -c D:\\Desktop\\work\\IDE\\vscode\\rt_task\\task.c",
+  "file": "D:/Desktop/work/IDE/vscode/rt_task/task.c",
+  "output": "CMakeFiles/demo.dir/task.c.obj"
+},
+{
+  "directory": "D:/Desktop/work/IDE/vscode/rt_task/build",
+  "command": "d:\\Desktop\\tools\\toolchain\\mingw64\\bin\\gcc.exe  @CMakeFiles/demo.dir/includes_C.rsp -g -o CMakeFiles\\demo.dir\\example.c.obj -c D:\\Desktop\\work\\IDE\\vscode\\rt_task\\example.c",
+  "file": "D:/Desktop/work/IDE/vscode/rt_task/example.c",
+  "output": "CMakeFiles/demo.dir/example.c.obj"
 }
 ]

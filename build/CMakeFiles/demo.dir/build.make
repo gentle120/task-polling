@@ -71,34 +71,51 @@ include CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/codegen:
 .PHONY : CMakeFiles/demo.dir/codegen
 
-CMakeFiles/demo.dir/task.cpp.obj: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/task.cpp.obj: CMakeFiles/demo.dir/includes_CXX.rsp
-CMakeFiles/demo.dir/task.cpp.obj: D:/Desktop/work/IDE/vscode/rt_task/task.cpp
-CMakeFiles/demo.dir/task.cpp.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Desktop\work\IDE\vscode\rt_task\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/task.cpp.obj"
-	d:\Desktop\tools\toolchain\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/task.cpp.obj -MF CMakeFiles\demo.dir\task.cpp.obj.d -o CMakeFiles\demo.dir\task.cpp.obj -c D:\Desktop\work\IDE\vscode\rt_task\task.cpp
+CMakeFiles/demo.dir/task.c.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/task.c.obj: CMakeFiles/demo.dir/includes_C.rsp
+CMakeFiles/demo.dir/task.c.obj: D:/Desktop/work/IDE/vscode/rt_task/task.c
+CMakeFiles/demo.dir/task.c.obj: CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Desktop\work\IDE\vscode\rt_task\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/task.c.obj"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo.dir/task.c.obj -MF CMakeFiles\demo.dir\task.c.obj.d -o CMakeFiles\demo.dir\task.c.obj -c D:\Desktop\work\IDE\vscode\rt_task\task.c
 
-CMakeFiles/demo.dir/task.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/demo.dir/task.cpp.i"
-	d:\Desktop\tools\toolchain\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Desktop\work\IDE\vscode\rt_task\task.cpp > CMakeFiles\demo.dir\task.cpp.i
+CMakeFiles/demo.dir/task.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/demo.dir/task.c.i"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Desktop\work\IDE\vscode\rt_task\task.c > CMakeFiles\demo.dir\task.c.i
 
-CMakeFiles/demo.dir/task.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/demo.dir/task.cpp.s"
-	d:\Desktop\tools\toolchain\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Desktop\work\IDE\vscode\rt_task\task.cpp -o CMakeFiles\demo.dir\task.cpp.s
+CMakeFiles/demo.dir/task.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/demo.dir/task.c.s"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\work\IDE\vscode\rt_task\task.c -o CMakeFiles\demo.dir\task.c.s
+
+CMakeFiles/demo.dir/example.c.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/example.c.obj: CMakeFiles/demo.dir/includes_C.rsp
+CMakeFiles/demo.dir/example.c.obj: D:/Desktop/work/IDE/vscode/rt_task/example.c
+CMakeFiles/demo.dir/example.c.obj: CMakeFiles/demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Desktop\work\IDE\vscode\rt_task\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/demo.dir/example.c.obj"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/demo.dir/example.c.obj -MF CMakeFiles\demo.dir\example.c.obj.d -o CMakeFiles\demo.dir\example.c.obj -c D:\Desktop\work\IDE\vscode\rt_task\example.c
+
+CMakeFiles/demo.dir/example.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/demo.dir/example.c.i"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Desktop\work\IDE\vscode\rt_task\example.c > CMakeFiles\demo.dir\example.c.i
+
+CMakeFiles/demo.dir/example.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/demo.dir/example.c.s"
+	d:\Desktop\tools\toolchain\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Desktop\work\IDE\vscode\rt_task\example.c -o CMakeFiles\demo.dir\example.c.s
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/task.cpp.obj"
+"CMakeFiles/demo.dir/task.c.obj" \
+"CMakeFiles/demo.dir/example.c.obj"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-demo.exe: CMakeFiles/demo.dir/task.cpp.obj
+demo.exe: CMakeFiles/demo.dir/task.c.obj
+demo.exe: CMakeFiles/demo.dir/example.c.obj
 demo.exe: CMakeFiles/demo.dir/build.make
 demo.exe: CMakeFiles/demo.dir/linkLibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Desktop\work\IDE\vscode\rt_task\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Desktop\work\IDE\vscode\rt_task\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

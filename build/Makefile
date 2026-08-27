@@ -128,29 +128,53 @@ demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-task.obj: task.cpp.obj
+example.obj: example.c.obj
+.PHONY : example.obj
+
+# target to build an object file
+example.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/example.c.obj
+.PHONY : example.c.obj
+
+example.i: example.c.i
+.PHONY : example.i
+
+# target to preprocess a source file
+example.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/example.c.i
+.PHONY : example.c.i
+
+example.s: example.c.s
+.PHONY : example.s
+
+# target to generate assembly for a file
+example.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/example.c.s
+.PHONY : example.c.s
+
+task.obj: task.c.obj
 .PHONY : task.obj
 
 # target to build an object file
-task.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.cpp.obj
-.PHONY : task.cpp.obj
+task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.c.obj
+.PHONY : task.c.obj
 
-task.i: task.cpp.i
+task.i: task.c.i
 .PHONY : task.i
 
 # target to preprocess a source file
-task.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.cpp.i
-.PHONY : task.cpp.i
+task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.c.i
+.PHONY : task.c.i
 
-task.s: task.cpp.s
+task.s: task.c.s
 .PHONY : task.s
 
 # target to generate assembly for a file
-task.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.cpp.s
-.PHONY : task.cpp.s
+task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/task.c.s
+.PHONY : task.c.s
 
 # Help Target
 help:
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... demo
+	@echo ... example.obj
+	@echo ... example.i
+	@echo ... example.s
 	@echo ... task.obj
 	@echo ... task.i
 	@echo ... task.s
