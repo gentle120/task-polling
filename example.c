@@ -40,5 +40,4 @@ int main(void)
     {
         task_start();
     }
-
 }
